@@ -91,7 +91,7 @@ const Home = () => {
             training programs! Our experts offer a range of courses, including
             Information Security and CEH Training, designed to provide practical
             knowledge and skills to protect sensitive information. Enroll now
-            and become a certified information security professional!
+            and become a certified information security professional!!
           </div>
           <div className=" mt-10">
             <button class="bg-black hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full">
