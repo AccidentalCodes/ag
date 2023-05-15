@@ -1,13 +1,11 @@
 import React from "react";
 import Logo from "../Img/aglogo.png";
-
-import Button from "@mui/material/Button";
 import Footer from "../Components/Footer";
 
 const Home = () => {
   return (
     <div className="bg-black">
-      <div className="px-16 py-10 items-center flex flex-row justify-between ">
+      <div className="px-16 py-10 items-center  flex flex-row justify-between ">
         <img src={Logo} className="w-60 " alt="Logo" />
         <div className="flex flex-row ">
           <div className="text-white text-2xl m-5 font-['Noto Sans SC']">
@@ -19,7 +17,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="text-white mt-16 m-5 flex flex-col items-center justify-center">
+      <div className="text-white mt-16 m-5 flex flex-col  bg-no-repeat  items-center justify-center ">
         <div className="text-9xl font-['Noto Sans SC'] font-extrabold ">
           rewards for paying
           <div className="text-9xl font-['Noto Sans SC']">
@@ -35,7 +33,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="text-white p-10 min-w-screen min-h-screen  ">
+      <div className="text-white p-10 min-w-screen min-h-screen bg-no-repeat bg-right object-contain bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm7.jpeg')] ">
         <div className="text-9xl font-['Noto Sans SC'] font-semibold pt-40  ">
           Be Secure
           <div>Feel Safe</div>
@@ -57,7 +55,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="text-white p-10 min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Siya/ag/src/Img/bg2.png')] ">
+      <div className="text-white p-10  bg-no-repeat bg-right bg-contain min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm5.jpeg')] ">
         <div className="text-9xl font-['Noto Sans SC'] font-semibold pt-40  ">
           Thinking of Vulnerability
           <div>testing</div>
@@ -78,7 +76,7 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="text-white  p-10 min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Siya/ag/src/Img/bg2.png')] ">
+      <div className="text-white bg-[#0e1339]  bg-no-repeat bg-left p-10 min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm1.jpeg')] ">
         <div className="grid justify-items-end ">
           <div className="text-9xl text-right font-['Noto Sans SC']  font-semibold pt-40  ">
             Wanna be an expert in Information security
