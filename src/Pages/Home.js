@@ -13,21 +13,48 @@ const Home = () => {
 
   return (
     <>
-      <div className="bg-black">
-        {/* <div className="px-16 py-10 items-center  flex flex-row justify-between ">
-          <img src={Logo} className="w-60 " alt="Logo" />
-          <div className="flex flex-row ">
-            <div className="text-white text-2xl m-5 font-['Noto Sans SC']">
+      <div className="overflow-hidden">
+        {/* <div className="p-10 items-center  flex flex-row justify-between ">
+          <img src={Logo} className="w-60" alt="Logo" />
+          <div className="flex flex-row  ">
+            <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
               credit score check
             </div>
-            <div className="text-white text-2xl m-5 font-['Noto Sans SC']">
+            <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
               {" "}
               CRED pay
             </div>
           </div>
         </div> */}
 
-        <div className="text-white p-5 flex flex-col  bg-no-repeat  items-center justify-center ">
+
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
+  <nav class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between" aria-label="Global">
+    <div class="flex items-center justify-between">
+      <a class="flex-none text-xl font-semibold dark:text-white" href="#">Brand</a>
+      <div class="sm:hidden">
+        <button type="button" class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800" data-hs-collapse="#navbar-with-collapse" aria-controls="navbar-with-collapse" aria-label="Toggle navigation">
+          <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+          </svg>
+          <svg class="hs-collapse-open:block hidden w-4 h-4" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="navbar-with-collapse" class="hidden basis-full grow sm:block">
+      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
+        <a class="font-medium text-blue-500" href="#" aria-current="page">Landing</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Account</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Work</a>
+        <a class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500" href="#">Blog</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+        <div className="bg-black text-white p-5 flex flex-col  bg-no-repeat  items-center justify-center ">
           <div
             className="text-5xl items-center  text-center sm:text-6xl font-['Noto Sans SC'] font-extrabold pt-40 "
             data-aos="fade-up"
@@ -39,10 +66,10 @@ const Home = () => {
               credit card bills.
             </div> */}
           </div>
-          <div className="text-1xl font-semibold sm:text-3xl font-['Noto Sans SC'] mt-10">
+          <div className="text-1xl font-semibold sm:text-3xl font-['Noto Sans SC'] mt-10 text-center lg:text-left ">
             Join the Secure World with Our Experts On Your Side to Guide
           </div>
-          <div className="mt-16 mb-96">
+          <div className="mt-16 mb-40">
             <button class="bg-gray-700 hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full">
               Learn More
             </button>
@@ -133,16 +160,24 @@ const Home = () => {
           />
         </div> */}
 
-        <div className="text-white p-10 min-w-screen min-h-screen bg-no-repeat bg-right object-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm7.jpeg')] ">
-          <div className="text-7xl sm:text-9xl  font-['Noto Sans SC'] font-semibold pt-20  ">
+        <div className="text-white px-10 py-10  lg:px-20  lg:py-40 bg-no-repeat bg-right  object-cover min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg5.jpg')] ">
+          <div
+            className="text-5xl lg:text-6xl xl:text-8xl font-['Noto Sans SC'] font-bold pt-40 "
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Be Secure
             <div>Feel Safe</div>
           </div>
-          <div className="text-3xl font-['Noto Sans SC'] mt-10">
+          <div
+            className="text-3xl font-['Noto Sans SC'] font-semibold mt-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Be an organisation that is secured with an Intenational
             standard....!
           </div>
-          <div className="text-1xl md:text-2xl font-['Noto Sans SC'] mt-20  w-full md:pr-96">
+          <div className="text-1xl md:text-2xl  font-['Noto Sans SC'] lg:w-3/5 lg:text-md mt-10  w-full ">
             Secure your business with our expert Information Security Audit
             services! Our team of CISAs specializes in conducting audits for
             various compliance standards including ISO 27001, GDPR, SOC 2, and
@@ -213,9 +248,9 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="text-white p-10  bg-no-repeat bg-right  object-cover min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm5.jpeg')] ">
+        <div className="text-white p-10 bg-no-repeat bg-right  object-cover min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm5.jpeg')] ">
           <div
-            className="text-5xl lg:text-6xl xl:text-8xl font-['Noto Sans SC'] font-semibold pt-40 "
+            className="text-5xl lg:text-6xl xl:text-8xl font-['Noto Sans SC'] font-semibold pt-40 md:pt-60 lg:pt-40 "
             data-aos="fade-right"
             data-aos-duration="1000"
           >
@@ -331,6 +366,92 @@ const Home = () => {
             </div>
           </div>
         </div> */}
+
+        <div className="text-white p-10 bg-[#0e1339]  bg-no-repeat bg-right  object-cover min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm1.jpeg')] ">
+          <div
+            className="text-5xl lg:text-6xl xl:text-8xl font-['Noto Sans SC'] font-semibold text-right pt-40 "
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            Wanna be an expert in Information security
+          </div>
+          <div
+            className="text-3xl font-['Noto Sans SC'] text-right mt-10"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            Or to equip you're employees in Infosec
+          </div>
+          <div className="text-1xl md:text-2xl text-right font-['Noto Sans SC'] mt-20  w-full ">
+            Advance your career in information security with our comprehensive
+            training programs! Our experts offer a range of courses, including
+            Information Security and CEH Training, designed to provide practical
+            knowledge and skills to protect sensitive information. Enroll now
+            and become a certified information security professional!
+          </div>
+          <div className="grid justify-items-end ">
+            <div className=" mt-10"></div>
+            <button
+              className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+              onClick={() => setShowModal(true)}
+            >
+              Open regular modal
+            </button>
+            {showModal ? (
+              <>
+                <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
+                  <div className="relative w-auto my-6 mx-auto max-w-3xl">
+                    {/*content*/}
+                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
+                      {/*header*/}
+                      <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
+                        <h3 className="text-3xl font-semibold">Modal Title</h3>
+                        <button
+                          className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                          onClick={() => setShowModal(false)}
+                        >
+                          <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                            ×
+                          </span>
+                        </button>
+                      </div>
+                      {/*body*/}
+                      <div className="relative p-6 flex-auto">
+                        <p className="my-4 text-slate-500 text-lg leading-relaxed">
+                          I always felt like I could do anything. That’s the
+                          main thing people are controlled by! Thoughts- their
+                          perception of themselves! They're slowed down by their
+                          perception of themselves. If you're taught you can’t
+                          do anything, you won’t do anything. I was taught I
+                          could do everything.
+                        </p>
+                      </div>
+                      {/*footer*/}
+                      <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                        <button
+                          className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                          onClick={() => setShowModal(false)}
+                        >
+                          Close
+                        </button>
+                        <button
+                          className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                          type="button"
+                          onClick={() => setShowModal(false)}
+                        >
+                          Save Changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
+              </>
+            ) : null}
+          </div>
+        </div>
 
         {/* <div className="text-white bg-[#0e1339]  bg-no-repeat bg-left p-10 min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm1.jpeg')] ">
           <div className="grid justify-items-end ">
