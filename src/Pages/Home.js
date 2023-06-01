@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <div className="overflow-hidden">
-        {/* <div className="p-10 items-center  flex flex-row justify-between ">
+        <div className="bg-black p-10 items-center  flex flex-row justify-between ">
           <img src={Logo} className="w-60" alt="Logo" />
           <div className="flex flex-row  ">
             <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
@@ -25,9 +25,9 @@ const Home = () => {
               CRED pay
             </div>
           </div>
-        </div> */}
+        </div>
 
-        <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
+        {/* <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
           <nav
             class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
             aria-label="Global"
@@ -104,7 +104,7 @@ const Home = () => {
               </div>
             </div>
           </nav>
-        </header>
+        </header> */}
 
         <div className="bg-black text-white p-5 flex flex-col  bg-no-repeat  items-center justify-center ">
           <div
