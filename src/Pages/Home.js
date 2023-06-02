@@ -3,18 +3,37 @@ import Logo from "../Img/aglogo.png";
 import Footer from "../Components/Footer";
 // import { Modal } from "antd";
 import bg1 from "../Img/bg1.png";
+import MenuIcon from "@mui/icons-material/Menu";
 
 const Home = () => {
-  // const [open, setOpen] = useState(false);
-  // const [open, setOpen] = useState(false);
-  // const handleOpen = () => setOpen(true);
-  // const handleClose = () => setOpen(false);
   const [showModal, setShowModal] = React.useState(false);
 
   return (
     <>
       <div className="overflow-hidden">
-        <div className="bg-black p-10 items-center  flex flex-row justify-between ">
+        <nav className="bg-black mx-auto items-center flex  justify-between">
+          <div>
+            <img src={Logo} className="w-80" alt="Logo" />
+          </div>
+          <div className="md:static absolute md:min-h-fit md:w-auto md:bg-black bg-white left-0 min-h-[40vh] flex items-center px-5 top-[-100%] w-full">
+            <ul className="md:flex-row flex-col flex md:items-center  md:gap-[4vw] gap-12">
+              <li>
+                <a className="text-red-800 hover:text-gray-500">
+                  credit score check
+                </a>
+              </li>
+              <li>
+                <a className="text-red-800">credit score check</a>
+              </li>
+            </ul>
+          </div>
+          <div className="flex items-center cursor-pointer md:hidden">
+            <MenuIcon onClick className=" text-white text-lg " />
+          </div>
+        </nav>
+
+        
+        {/* <div className="bg-black p-10 items-center  flex flex-row justify-between ">
           <img src={Logo} className="w-60" alt="Logo" />
           <div className="flex flex-row  ">
             <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
@@ -25,7 +44,7 @@ const Home = () => {
               CRED pay
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
           <nav
@@ -122,7 +141,7 @@ const Home = () => {
             Join the Secure World with Our Experts On Your Side to Guide
           </div>
           <div className="mt-16 mb-40">
-            <button class="bg-gray-700 hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full">
+            <button class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded-full">
               Learn More
             </button>
           </div>
@@ -214,12 +233,12 @@ const Home = () => {
 
         <div className="text-white px-10 py-40  lg:px-20  lg:py-60 bg-no-repeat bg-right  object-cover min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg5.jpg')] ">
           <div
-            className="text-5xl lg:text-6xl xl:text-8xl font-['Poppins'] font-bold  "
+            className="text-6xl  md:text-7xl xl:text-9xl font-['Poppins'] font-bold  "
             data-aos="fade-right"
             data-aos-duration="1000"
           >
             Be Secure
-            <div>Feel Safe</div>
+            <div>Feel Safe.</div>
           </div>
           <div
             className="text-3xl font-['Poppins'] font-semibold mt-10"
@@ -239,7 +258,7 @@ const Home = () => {
           </div>
           <div className=" mt-10">
             <button
-              className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              className="bg-pink-500 text-white  active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
               type="button"
               onClick={() => setShowModal(true)}
             >
@@ -317,7 +336,11 @@ const Home = () => {
             With the team of Certified Ethical hackers with immensive
             experiences
           </div>
-          <div className="text-1xl md:text-2xl  font-['Noto Sans SC'] mt-20  w-full ">
+          <div
+            className="text-1xl md:text-2xl  font-['Noto Sans SC'] mt-20  w-full "
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
             Protect your business from cyber threats with our VAPT testing
             services! Our expert team will identify vulnerabilities in your
             systems and provide actionable recommendations to mitigate them.
