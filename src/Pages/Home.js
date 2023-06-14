@@ -149,90 +149,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* <div className="text-white p-10 min-w-screen min-h-screen bg-no-repeat bg-right object-contain bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm7.jpeg')] ">
-          <div className="text-7xl sm:text-9xl  font-['Noto Sans SC'] font-semibold pt-20  ">
-            Be Secure
-            <div>Feel Safe</div>
-          </div>
-          <div className="text-3xl font-['Noto Sans SC'] mt-10">
-            Be an organisation that is secured with an Intenational
-            standard....!
-          </div>
-          <div className="text-1xl md:text-2xl font-['Noto Sans SC'] mt-20  w-full md:pr-96">
-            Secure your business with our expert Information Security Audit
-            services! Our team of CISAs specializes in conducting audits for
-            various compliance standards including ISO 27001, GDPR, SOC 2, and
-            more. With years of experience, our audits will ensure that your
-            company's sensitive information is protected. Trust us to keep your
-            business compliant and secure. Contact us now to schedule an audit!
-          </div>
-          <div className=" mt-10">
-            <button
-              class="bg-black hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full"
-              onClick={() => setOpen(true)}
-            >
-              Learn More
-            </button>
-            <Modal
-              // title="Certified Ethical hackers"
-              centered
-              open={open}
-              onOk={() => setOpen(false)}
-              // okType="primary"
-              onCancel={() => setOpen(false)}
-            >
-              <p>
-                Enhance your business's security with our comprehensive
-                Information Security Audit services. We have a team of Certified
-                Information Systems Auditors (CISAs) who are experts in
-                conducting audits for various compliance standards, including
-                ISO 27001, GDPR, SOC 2, and more. Our experienced CISA
-                professionals will meticulously assess your systems, processes,
-                and controls to identify vulnerabilities and ensure compliance
-                with industry regulations. With their in-depth knowledge, they
-                provide valuable insights and recommendations for strengthening
-                your security measures. But our services don't stop at auditing
-                alone. We offer end-to-end implementation solutions, helping you
-                implement robust security frameworks tailored to your specific
-                needs. From policy development to security awareness training,
-                we guide you through the entire process, ensuring a seamless and
-                secure environment for your business. Trust our expertise to
-                safeguard your sensitive information, mitigate risks, and
-                demonstrate compliance with industry standards. Contact us today
-                to schedule an Information Security Audit and experience peace
-                of mind in the face of evolving cybersecurity challenges.
-              </p>
-            </Modal>
-          </div>
-        </div> */}
-
-        {/* <div className=" w-full h-screen relative my-20">
-          <div className="relative p-10 flex-col items-center">
-            <div className="text-7xl relative sm:text-9xl z-50 text-white font-['Noto Sans SC'] font-semibold pt-10  ">
-              Be Secure
-              <div>Feel Safe</div>
-            </div>
-            <div className="text-3xl relative z-50 text-white font-['Noto Sans SC'] mt-10">
-              Be an organisation that is secured with an Intenational
-              standard....!
-            </div>
-            <div className="text-1xl relative z-50 text-white md:text-2xl font-['Noto Sans SC'] mt-20  w-full md:pr-96">
-              Secure your business with our expert Information Security Audit
-              services! Our team of CISAs specializes in conducting audits for
-              various compliance standards including ISO 27001, GDPR, SOC 2, and
-              more. With years of experience, our audits will ensure that your
-              company's sensitive information is protected. Trust us to keep
-              your business compliant and secure. Contact us now to schedule an
-              audit!
-            </div>
-          </div>
-
-          <img
-            src={bg1}
-            className="w-full h-full absolute inset-0  object-cover"
-          />
-        </div> */}
-
         <div className="text-white px-10 py-40  lg:px-20  lg:py-60 bg-no-repeat   object-cover min-w-screen h-full bg-cover  bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg5.jpg')] ">
           <div
             className="text-6xl  md:text-7xl xl:text-9xl font-['Poppins'] font-bold  "
@@ -258,12 +174,14 @@ const Home = () => {
             company's sensitive information is protected. Trust us to keep your
             business compliant and secure. Contact us now to schedule an audit!
           </div>
-          <button
-            class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded-full"
-            onClick={() => setModals(true)}
-          >
-            click me
-          </button>
+          <div className="mt-5">
+            <button
+              class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded"
+              onClick={() => setModals(true)}
+            >
+              click me
+            </button>
+          </div>
           <Modal onClose={handleOnClose} visible={Modals} />
         </div>
 
@@ -291,6 +209,15 @@ const Home = () => {
             Stay secure and stay ahead of the game with our VAPT services.
             Contact us now to schedule a testing!
           </div>
+          <div className="mt-5">
+            <button
+              class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded"
+              onClick={() => setModals(true)}
+            >
+              click me
+            </button>
+          </div>
+          <Modal onClose={handleOnClose} visible={Modals} />
 
           <div className="grid justify-items-end ">
             <div className=" mt-10"></div>
