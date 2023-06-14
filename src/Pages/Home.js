@@ -218,59 +218,6 @@ const Home = () => {
             </button>
           </div>
           <Modal onClose={handleOnClose} visible={Modals} />
-
-          <div className="grid justify-items-end ">
-            <div className=" mt-10"></div>
-            <button
-              className="bg-pink-500 text-white active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-              type="button"
-              onClick={() => setShowModal(true)}
-            >
-              Open regular modal
-            </button>
-            {showModal ? (
-              <>
-                <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                  <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                    {/*content*/}
-                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                      {/*header*/}
-                      <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t"></div>
-                      {/*body*/}
-                      <div className="relative p-6 flex-auto">
-                        <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                          I always felt like I could do anything. That’s the
-                          main thing people are controlled by! Thoughts- their
-                          perception of themselves! They're slowed down by their
-                          perception of themselves. If you're taught you can’t
-                          do anything, you won’t do anything. I was taught I
-                          could do everything.
-                        </p>
-                      </div>
-                      {/*footer*/}
-                      <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                        <button
-                          className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                          type="button"
-                          onClick={() => setShowModal(false)}
-                        >
-                          Close
-                        </button>
-                        <button
-                          className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                          type="button"
-                          onClick={() => setShowModal(false)}
-                        >
-                          Save Changes
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-              </>
-            ) : null}
-          </div>
         </div>
 
         <div className="text-white bg-[#0e1339]  px-10 py-40  lg:px-20  lg:py-60 bg-no-repeat   object-obtain min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg5.jpg')] ">
@@ -357,62 +304,6 @@ const Home = () => {
             ) : null}
           </div>
         </div>
-
-        {/* <div class="flex  items-center bg-gray-300">
-          <div class=" bg-green-500">
-            <div class="flex">
-              <img src={bg1} className="absolute" />
-              <div className="text-white z-50 p-10 min-w-screen min-h-screen bg-no-repeat bg-right object-contain  ">
-                <div className="text-7xl sm:text-9xl  font-['Noto Sans SC'] font-semibold pt-20  ">
-                  Be Secure
-                  <div>Feel Safe</div>
-                </div>
-                <div className="text-3xl font-['Noto Sans SC'] mt-10">
-                  Be an organisation that is secured with an Intenational
-                  standard....!
-                </div>
-                <div className="text-1xl md:text-2xl font-['Noto Sans SC'] mt-20  w-full md:pr-96">
-                  Secure your business with our expert Information Security
-                  Audit services! Our team of CISAs specializes in conducting
-                  audits for various compliance standards including ISO 27001,
-                  GDPR, SOC 2, and more. With years of experience, our audits
-                  will ensure that your company's sensitive information is
-                  protected. Trust us to keep your business compliant and
-                  secure. Contact us now to schedule an audit!
-                </div>
-                <div className=" mt-10">
-                  <button class="bg-black hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full">
-                    Learn More
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* <div className="text-white bg-[#0e1339]  bg-no-repeat bg-left p-10 min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm1.jpeg')] ">
-          <div className="grid justify-items-end ">
-            <div className="text-9xl text-right font-['Noto Sans SC']  font-semibold pt-40  ">
-              Wanna be an expert in Information security
-            </div>
-            <div className="text-3xl text-right font-['Noto Sans SC'] mt-10">
-              Or to equip you're employees in Infosec
-            </div>
-            <div className="text-2xl text-right font-['Noto Sans SC'] mt-20 w-full pl-96">
-              Advance your career in information security with our comprehensive
-              training programs! Our experts offer a range of courses, including
-              Information Security and CEH Training, designed to provide
-              practical knowledge and skills to protect sensitive information.
-              Enroll now and become a certified information security
-              professional!!
-            </div>
-            <div className=" mt-10">
-              <button class="bg-black hover:bg-blue-700 text-white font-bold py-5 px-20  rounded-full">
-                Learn More
-              </button>
-            </div>
-          </div>
-        </div> */}
 
         <div>
           <Footer />
