@@ -6,6 +6,7 @@ import bg1 from "../Img/bg1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Modal from "../Components/Modal";
 import ReactWhatsapp from "react-whatsapp";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Home = () => {
   const [showModal, setShowModal] = React.useState(false);
@@ -27,7 +28,16 @@ const Home = () => {
                 </a>
               </li>
               <li>
-                <a className="text-red-800">credit score check</a>
+                <a className="text-green-800 text-2xl flex items-center">
+                  {" "}
+                  <WhatsAppIcon className="mr-2" fontSize="large" />
+                  <ReactWhatsapp
+                    number="+91 6383555967"
+                    message="Hello World!!!"
+                  >
+                    Whatsapp
+                  </ReactWhatsapp>
+                </a>
               </li>
             </ul>
           </div>
@@ -35,98 +45,6 @@ const Home = () => {
             <MenuIcon onClick className=" text-white text-lg " />
           </div>
         </nav>
-
-        {/* <div className="bg-black p-10 items-center  flex flex-row justify-between ">
-          <img src={Logo} className="w-60" alt="Logo" />
-          <div className="flex flex-row  ">
-            <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
-              credit score check
-            </div>
-            <div className="text-white text-1xl m-5 font-['Noto Sans SC']">
-              {" "}
-              CRED pay
-            </div>
-          </div>
-        </div> */}
-
-        {/* <header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800">
-          <nav
-            class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
-            aria-label="Global"
-          >
-            <div class="flex items-center justify-between">
-              <a
-                class="flex-none text-xl font-semibold dark:text-white"
-                href="#"
-              >
-                Brand
-              </a>
-              <div class="sm:hidden">
-                <button
-                  type="button"
-                  class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
-                  data-hs-collapse="#navbar-with-collapse"
-                  aria-controls="navbar-with-collapse"
-                  aria-label="Toggle navigation"
-                >
-                  <svg
-                    class="hs-collapse-open:hidden w-4 h-4"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                    />
-                  </svg>
-                  <svg
-                    class="hs-collapse-open:block hidden w-4 h-4"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div
-              id="navbar-with-collapse"
-              class="hidden basis-full grow sm:block"
-            >
-              <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-                <a
-                  class="font-medium text-blue-500"
-                  href="#"
-                  aria-current="page"
-                >
-                  Landing
-                </a>
-                <a
-                  class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                  href="#"
-                >
-                  Account
-                </a>
-                <a
-                  class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                  href="#"
-                >
-                  Work
-                </a>
-                <a
-                  class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
-                  href="#"
-                >
-                  Blog
-                </a>
-              </div>
-            </div>
-          </nav>
-        </header> */}
 
         <div className="bg-black text-white p-5 flex flex-col  bg-no-repeat  items-center justify-center ">
           <div
@@ -185,14 +103,6 @@ const Home = () => {
           </div>
           <Modal onClose={handleOnClose} visible={Modals} />
         </div>
-        <button
-          class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded"
-          onClick={() => setModals(true)}
-        >
-          <ReactWhatsapp number="+91 6383555967" message="Hello World!!!">
-            hello
-          </ReactWhatsapp>
-        </button>
 
         <div className="text-white px-10 py-40  lg:px-20  lg:py-60   bg-no-repeat bg-cover bg-right  object-cover min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm5.jpeg')] ">
           <div
@@ -229,7 +139,7 @@ const Home = () => {
           <Modal onClose={handleOnClose} visible={Modals} />
         </div>
 
-        <div className="text-white bg-[#0e1339]  px-10 py-40  lg:px-20  lg:py-60 bg-no-repeat   object-obtain min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg5.jpg')] ">
+        <div className="text-white bg-[#0e1339]  px-10 py-40  lg:px-20  lg:py-60 bg-no-repeat   object-obtain min-w-screen h-full bg-cover bg-[url('/Volumes/SIYA/Git/ag/src/Img/bg3.png')] ">
           <div
             className="text-6xl  md:text-7xl xl:text-9xl font-['Poppins'] font-bold  "
             data-aos="fade-right"
@@ -250,67 +160,6 @@ const Home = () => {
             Information Security and CEH Training, designed to provide practical
             knowledge and skills to protect sensitive information. Enroll now
             and become a certified information security professional!
-          </div>
-          <div className=" mt-10">
-            <button
-              className="bg-pink-500 text-white  active:bg-pink-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-              type="button"
-              onClick={() => setShowModal(true)}
-            >
-              Open regular modal
-            </button>
-            {showModal ? (
-              <>
-                <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-                  <div className="relative w-auto my-6 mx-auto max-w-3xl">
-                    {/*content*/}
-                    <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                      {/*header*/}
-                      <div className="flex items-start justify-between p-5 border-b border-solid border-slate-200 rounded-t">
-                        <h3 className="text-3xl font-semibold">Modal Title</h3>
-                        <button
-                          className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                          onClick={() => setShowModal(false)}
-                        >
-                          <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
-                            ×
-                          </span>
-                        </button>
-                      </div>
-                      {/*body*/}
-                      <div className="relative p-6 flex-auto">
-                        <p className="my-4 text-slate-500 text-lg leading-relaxed">
-                          I always felt like I could do anything. That’s the
-                          main thing people are controlled by! Thoughts- their
-                          perception of themselves! They're slowed down by their
-                          perception of themselves. If you're taught you can’t
-                          do anything, you won’t do anything. I was taught I
-                          could do everything.
-                        </p>
-                      </div>
-                      {/*footer*/}
-                      <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
-                        <button
-                          className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                          type="button"
-                          onClick={() => setShowModal(false)}
-                        >
-                          Close
-                        </button>
-                        <button
-                          className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
-                          type="button"
-                          onClick={() => setShowModal(false)}
-                        >
-                          Save Changes
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-              </>
-            ) : null}
           </div>
         </div>
 
