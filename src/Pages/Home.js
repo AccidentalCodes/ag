@@ -5,6 +5,7 @@ import Footer from "../Components/Footer";
 import bg1 from "../Img/bg1.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import Modal from "../Components/Modal";
+import ReactWhatsapp from "react-whatsapp";
 
 const Home = () => {
   const [showModal, setShowModal] = React.useState(false);
@@ -184,6 +185,14 @@ const Home = () => {
           </div>
           <Modal onClose={handleOnClose} visible={Modals} />
         </div>
+        <button
+          class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded"
+          onClick={() => setModals(true)}
+        >
+          <ReactWhatsapp number="+91 6383555967" message="Hello World!!!">
+            hello
+          </ReactWhatsapp>
+        </button>
 
         <div className="text-white px-10 py-40  lg:px-20  lg:py-60   bg-no-repeat bg-cover bg-right  object-cover min-w-screen min-h-screen bg-[url('/Volumes/SIYA/Git/ag/src/Img/bgm5.jpeg')] ">
           <div
