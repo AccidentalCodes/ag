@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import Logo from "../Img/aglogo.png";
 import Footer from "../Components/Footer";
-// import { Modal } from "antd";
-import bg1 from "../Img/bg1.png";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import Modal from "../Components/Modal";
 import ReactWhatsapp from "react-whatsapp";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const Home = () => {
-  const [showModal, setShowModal] = React.useState(false);
   const [Modals, setModals] = useState(false);
   const handleOnClose = () => setModals(false);
 
