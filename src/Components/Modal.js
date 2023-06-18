@@ -25,11 +25,8 @@ const Modal = ({ visible, onClose }) => {
           data-aos="fade-right"
           data-aos-duration="1000"
         >
-          I always felt like I could do anything. That’s the main thing people
-          are controlled by! Thoughts- their perception of themselves! They're
-          slowed down by their perception of themselves. If you're taught you
-          can’t do anything, you won’t do anything. I was taught I could do
-          everything.
+       
+Supercharge your organization's security and ensure seamless compliance with our cutting-edge Infosec Audit Services. Unleash the power of our elite team of CISA auditors, armed with External Audit Training, Audit Support, Evidence Audit, Readiness Audit, and Security Maturity Audit. Stay one step ahead of the ever-evolving cyber threats with our intensive training sessions, equipping your internal audit teams with the latest industry insights and best practices. Experience unparalleled support as our auditors navigate the complex audit process, meticulously examining your security controls and policies to unearth vulnerabilities and fortify your defenses. Our comprehensive readiness assessment will prepare you to ace official audits, ensuring you shine in the spotlight. And now, our newly introduced Security Maturity Audit will assess your organization's security maturity level, providing a roadmap for continuous improvement and resilience against emerging threats. Embrace the future of security with our Infosec Audit Services, your ultimate shield against data breaches. Don't wait, seize the opportunity for a safer and more secure tomorrow. Contact us now to embark on this exhilarating journey.
         </div>
 
         {/* <div>
