@@ -18,6 +18,11 @@ const Home = () => {
   return (
     <>
       <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
+      <FloatButton.Group icon={<MenuIcon />} trigger="click">
+        <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
+        <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
+      </FloatButton.Group>
+      {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
       <div className="overflow-hidden">
         {/* <nav className="bg-black mx-auto items-center flex  justify-between">
           <div>
