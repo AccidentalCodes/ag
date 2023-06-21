@@ -8,22 +8,40 @@ import ReactWhatsapp from 'react-whatsapp';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Modal1 from '../Components/Modal1';
 import Video from '/Volumes/SIYA/Git/ag/src/Img/Logovideo.mp4';
+import checklogo from '/Volumes/SIYA/Git/ag/src/Img/checklogo.mov';
 import {FloatButton} from 'antd';
+import Newlogo from '../Img/NewLogo.png';
 
 const Home = () => {
   const [Modals, setModals] = useState(false);
-  // const [Modal1, setModal1] = useState(false);
+  const [Modal_1, setModal_1] = useState(false);
   const handleOnClose = () => setModals(false);
+  const handleOnClose1 = () => setModal_1(false);
+  const what = () => {};
 
   return (
     <>
-      <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
-      <FloatButton.Group icon={<MenuIcon />} trigger="click">
-        <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
-        <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} />
+      {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
+      <FloatButton.Group icon={<MenuIcon />} trigger="hover">
+        {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
+        <FloatButton
+          icon={<WhatsAppIcon />}
+          style={{right: 40}}
+          onClick={() => {
+            <ReactWhatsapp number="+91 6383555967" message="Hello World!!!">
+              Whatsapp
+            </ReactWhatsapp>;
+          }}
+        />
       </FloatButton.Group>
       {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
+
       <div className="overflow-hidden">
+        <nav className=" md:bg-black hidden mx-auto  items-center flex  justify-between">
+          <div>
+            <img src={Newlogo} className="w-40 h-40 ml-10" alt="Logo" />
+          </div>
+        </nav>
         {/* <nav className="bg-black mx-auto items-center flex  justify-between">
           <div>
             <img src={newlogo} className="w-60" alt="Logo" />
@@ -52,7 +70,7 @@ const Home = () => {
           </div>
         </nav> */}
         <div className=" flex bg-black  justify-center items-center">
-          <video className="sm:w-1/2  " src={Video} autoPlay muted />
+          <video className="sm:w-1/2  " src={checklogo} autoPlay muted />
         </div>
 
         <div className="bg-black text-white px-5 flex flex-col  bg-no-repeat  items-center justify-center ">
@@ -131,13 +149,13 @@ const Home = () => {
             Stay secure and stay ahead of the game with our VAPT services.
             Contact us now to schedule a testing!
           </div>
-          <div className="mt-5 ">
+          <div className="mt-5 flex justify-end ">
             <button
-              class="bg-gray-700 hover:bg-blue-700  text-white font-bold py-5 px-20 rounded"
-              onClick={() => setModals(true)}>
+              class="bg-gray-700 hover:bg-blue-700 text-white font-bold py-5 px-20 rounded"
+              onClick={() => setModal_1(true)}>
               click me
             </button>
-            <Modal1 onClose={handleOnClose} visible={Modals} />
+            <Modal1 onClose={handleOnClose1} visible={Modal_1} />
           </div>
         </div>
 

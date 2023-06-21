@@ -15,10 +15,10 @@ const Modal1 = ({visible, onClose}) => {
       </div>
 
       <div
-        className="p-8 h-full rounded flex flex-col 
+        className="p-8 mt-14 text-justify lg:mt-56   rounded flex flex-col 
      items-center justify-center ">
         <div
-          className="text-slate-500 text-sm md:text-1xl px-4 font-['Poppins']  "
+          className="text-slate-500 text-sm lg:text-2xl px-4 font-['Poppins']  "
           data-aos="fade-right"
           data-aos-duration="1000">
           Harness the expertise of our highly skilled and experienced team of
