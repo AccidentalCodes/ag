@@ -7,7 +7,6 @@ import Modal from '../Components/Modal';
 import ReactWhatsapp from 'react-whatsapp';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Modal1 from '../Components/Modal1';
-import Video from '/Volumes/SIYA/Git/ag/src/Img/Logovideo.mp4';
 import checklogo from '/Volumes/SIYA/Git/ag/src/Img/checklogo.mov';
 import {FloatButton} from 'antd';
 import Newlogo from '../Img/NewLogo.png';
@@ -17,13 +16,10 @@ const Home = () => {
   const [Modal_1, setModal_1] = useState(false);
   const handleOnClose = () => setModals(false);
   const handleOnClose1 = () => setModal_1(false);
-  const what = () => {};
 
   return (
     <>
-      {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
       <FloatButton.Group icon={<MenuIcon />} trigger="hover">
-        {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
         <FloatButton
           icon={<WhatsAppIcon />}
           style={{right: 40}}
@@ -34,41 +30,14 @@ const Home = () => {
           }}
         />
       </FloatButton.Group>
-      {/* <FloatButton icon={<WhatsAppIcon />} style={{right: 40}} /> */}
 
       <div className="overflow-hidden">
-        <nav className=" md:bg-black hidden mx-auto  items-center flex  justify-between">
+        <nav className=" md:bg-black  mx-auto  items-center flex  justify-between">
           <div>
             <img src={Newlogo} className="w-40 h-40 ml-10" alt="Logo" />
           </div>
         </nav>
-        {/* <nav className="bg-black mx-auto items-center flex  justify-between">
-          <div>
-            <img src={newlogo} className="w-60" alt="Logo" />
-          </div>
-          <div className="md:static absolute md:min-h-fit md:w-auto md:bg-black bg-white left-0 min-h-[40vh] flex items-center px-5 top-[-100%] w-full">
-            <ul className="md:flex-row flex-col flex md:items-center  md:gap-[4vw] gap-12">
-              <li>
-                <a className="text-red-800 hover:text-gray-500">
-                  credit score check
-                </a>
-              </li>
-              <li>
-                <a className="text-green-800 text-2xl flex items-center">
-                  <WhatsAppIcon className="mr-2" fontSize="large" />
-                  <ReactWhatsapp
-                    number="+91 6383555967"
-                    message="Hello World!!!">
-                    Whatsapp
-                  </ReactWhatsapp>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="flex items-center cursor-pointer md:hidden">
-            <MenuIcon onClick className=" text-white text-lg " />
-          </div>
-        </nav> */}
+
         <div className=" flex bg-black  justify-center items-center">
           <video className="sm:w-1/2  " src={checklogo} autoPlay muted />
         </div>
@@ -80,9 +49,6 @@ const Home = () => {
             data-aos-duration="1000">
             "Empower your digital fortress with our expert cyber security
             consulting."
-            {/* <div className="text-7xl sm:text-9xl font-['Noto Sans SC']">
-              credit card bills.
-            </div> */}
           </div>
           <div className="text-1xl font-semibold sm:text-3xl font-['Noto Sans SC'] mt-10 text-center lg:text-left ">
             Join the Secure World with Our Experts On Your Side to Guide
