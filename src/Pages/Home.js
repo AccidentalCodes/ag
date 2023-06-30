@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import Logo from '../Img/aglogo.png';
 import newlogo from '../Img/logo new.png';
 import Footer from '../Components/Footer';
@@ -20,19 +20,15 @@ const Home = () => {
   return (
     <>
       <FloatButton.Group icon={<MenuIcon />} trigger="hover">
-        <FloatButton
-          icon={<WhatsAppIcon />}
-          style={{right: 40}}
-          onClick={() => {
-            <ReactWhatsapp number="+91 6383555967" message="Hello World!!!">
-              Whatsapp
-            </ReactWhatsapp>;
-          }}
-        />
+        <ReactWhatsapp number="+91 6383555967" message="Hello World!!!">
+          <FloatButton
+            icon={<WhatsAppIcon />}
+            style={{right: 40}}></FloatButton>
+        </ReactWhatsapp>
       </FloatButton.Group>
 
       <div className="overflow-hidden">
-        <nav className=" md:bg-black  mx-auto  items-center flex  justify-between">
+        <nav className=" md:bg-black hidden mx-auto  items-center flex  justify-between">
           <div>
             <img src={Newlogo} className="w-40 h-40 ml-10" alt="Logo" />
           </div>
